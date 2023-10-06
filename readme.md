@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/github/license/dchahla/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE) 
 ## Why
 
-Easy APN (Apple Push Notification) is a lightweight Node.js module designed for Node.js 18 and later, allowing you to send push notifications to iOS devices using the Apple Push Notification Service (APNs) seamlessly. No dependencies are required as it leverages the simplicity of the `curl` command for reliable error handling.
+Easy APN (Apple Push Notification) is a lightweight Node.js module designed for any version of Node, including Node.js 18 and later, allowing you to send push notifications to iOS devices using the Apple Push Notification Service (APNs) seamlessly. No dependencies are required as it leverages the simplicity of the `curl` command for reliable error handling.
 
 This module was born out of frustration after trying seemingly all existing APN npm libraries (apn-http2, apn2, node-apn, push-notification) in Node 18. When transitioning past Node.js 16 to Node.js 18, these modules returned error "unsupported" due to the introduction of native http2 in Node.js 18.
 
