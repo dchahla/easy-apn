@@ -1,7 +1,7 @@
 {
   "name": "@swoopshops/easy-apn",
   "version": "1.0.1",
-  "description": "Sends a push notification to an iOS device using a secure HTTP2 connetion with APNS.",
+  "description": "Sends a push notification to an iOS device using a secure HTTP2 connetion with (APNS) Apple Push Notification Server.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
