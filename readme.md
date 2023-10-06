@@ -1,6 +1,8 @@
 # easy-apn
 [![npm version](https://img.shields.io/npm/v/@swoopshops/easy-apn)](https://www.npmjs.com/package/@swoopshops/easy-apn)
 [![License](https://img.shields.io/github/license/@swoopshops/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE) 
+[![Known Vulnerabilities](https://snyk.io/test/github/sverweij/compact-yarn-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/sverweij/compact-yarn-audit?targetFile=package.json)
+
 ## Why
 
 Easy APN is a lightweight Node.js module designed for any version of Node, including Node.js 18 and later, allowing you to send push notifications to iOS devices using the Apple Push Notification Service (APNs) seamlessly. No dependencies are required as it leverages the simplicity of the `curl` command for reliable error handling.
