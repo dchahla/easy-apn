@@ -29,8 +29,10 @@ const pushNotificationData = {
   certPath: '/path/to/your/cert.p12',
   exportPassword: 'your-export-password',
   appBundleId: 'com.your.app',
-  pushToken: 'your-push-token',
+  pushToken: 'your-device-push-token', 
   additionalInfo: 'Test', // optional
+  production: true, // use false for sandbox.push.apple.com must be dev certs - optional
+  debuggerEnabled: true // logs  
 };
 
 sendPushNotification(pushNotificationData, (error) => {
@@ -54,5 +56,8 @@ sendPushNotification(pushNotificationData, (error) => {
     - `[appBundleId]` (String): The bundle ID of your iOS app (required).
     - `[pushToken]` (String): The device's push notification token (required).
     - `[additionalInfo]` (String, optional): Additional information for the push notification (default: '').
+    - `[production]` (Boolean, optional): Whether to send the notification to the production environment (`true`) or the sandbox environment (`false`, default).
+    - `[debuggerEnabled]` (Boolean, optional) Prints stdout and stderr stream.
+
   - **callback** (Function): A callback function to handle the result of sending the push notification. It will be called with an error as the first argument if there is an error, or `null` if the push notification was sent successfully.
 
