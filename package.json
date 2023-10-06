@@ -1,6 +1,6 @@
 {
   "name": "@swoopshops/easy-apn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sends a push notification to an iOS device using APNs.",
   "main": "index.js",
   "scripts": {

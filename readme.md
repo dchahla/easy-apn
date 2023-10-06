@@ -1,8 +1,7 @@
 # easy-apn
-
-<!-- [![npm version](https://img.shields.io/npm/v/easy-apn.svg)](https://www.npmjs.com/package/easy-apn)
-[![License](https://img.shields.io/github/license/dchahla/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE) -->
-Background
+[![npm version](https://img.shields.io/npm/v/@swoopshops/easy-apn)](https://www.npmjs.com/package/easy-apn)
+[![License](https://img.shields.io/github/license/dchahla/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE) 
+## Why
 
 Easy APN (Apple Push Notification) is a lightweight Node.js module designed for Node.js 18 and later, allowing you to send push notifications to iOS devices using the Apple Push Notification Service (APNs) seamlessly. No dependencies are required as it leverages the simplicity of the `curl` command for reliable error handling.
 
@@ -17,9 +16,10 @@ You can install the `easy-apn` module via npm:
 
 ```bash
 npm install easy-apn
-
+```
 ## Usage 
-`const sendPushNotification = require('easy-apn');
+```
+const sendPushNotification = require('easy-apn');
 
 const pushNotificationData = {
   title: 'Your Notification Title',
@@ -37,23 +37,22 @@ sendPushNotification(pushNotificationData, (error) => {
   if (error) {
     console.error('Error:', error);
   }
-});`
-
+});
+```
 
 ## API
 
-options (Object): An object containing the following properties:
+- **sendPushNotification(options, callback)**
+  - Sends a push notification to an iOS device using APNs.
+  - **options** (Object): An object containing the following properties:
+    - `[title]` (String): The title of the push notification (required).
+    - `[message]` (String): The message content of the push notification (required).
+    - `[sound]` (String, optional): The name of the sound to be played (default: 'default').
+    - `[badge]` (Number, optional): The badge number to display (default: 0).
+    - `[certPath]` (String): The file path to your P12 certificate file (required).
+    - `[exportPassword]` (String): The export password for the P12 certificate file (required).
+    - `[appBundleId]` (String): The bundle ID of your iOS app (required).
+    - `[pushToken]` (String): The device's push notification token (required).
+    - `[additionalInfo]` (String, optional): Additional information for the push notification (default: '').
+  - **callback** (Function): A callback function to handle the result of sending the push notification. It will be called with an error as the first argument if there is an error, or `null` if the push notification was sent successfully.
 
-title (String): The title of the push notification (required).
-message (String): The message content of the push notification (required).
-sound (String, optional): The name of the sound to be played (default: 'default').
-badge (Number, optional): The badge number to display (default: 0).
-certPath (String): The file path to your P12 certificate file (required).
-exportPassword (String): The export password for the P12 certificate file (required).
-appBundleId (String): The bundle ID of your iOS app (required).
-pushToken (String): The device's push notification token (required).
-additionalInfo (String, optional): Additional information for the push notification (default: '').
-callback (Function): A callback function to handle the result of sending the push notification. It will be called with an error as the first argument if there is an error, or null if the push notification was sent successfully.
-
-License
-This project is licensed under the MIT License
