@@ -35,11 +35,15 @@ const pushNotificationData = {
   debuggerEnabled: true // logs  
 };
 
-sendPushNotification(pushNotificationData, (error) => {
-  if (error) {
-    console.error('Error:', error);
-  }
-});
+async function exampleSend() {
+
+    const err = await sendPushNotification(pushNotificationData)
+    if(err){console.log(err)}
+
+}
+
+exampleSend()
+
 ```
 
 ## API
