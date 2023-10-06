@@ -1,7 +1,7 @@
 # easy-apn
 [![npm version](https://img.shields.io/npm/v/@swoopshops/easy-apn)](https://www.npmjs.com/package/@swoopshops/easy-apn)
 [![License](https://img.shields.io/github/license/@swoopshops/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE) 
-[![Known Vulnerabilities](https://snyk.io/test/github/sverweij/compact-yarn-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/sverweij/compact-yarn-audit?targetFile=package.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/dchahla/easy-apn/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dchahla/easy-apn?targetFile=package.json)
 
 ## Why
 
