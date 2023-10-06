@@ -1,0 +1,28 @@
+{
+  "name": "@swoopshops/easy-apn",
+  "version": "1.0.0",
+  "description": "Sends a push notification to an iOS device using APNs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchahla/easy-apn.git"
+  },
+  "keywords": [
+    "APN",
+    "Apple",
+    "Push",
+    "Notifications",
+    "HTTP2",
+    "Node",
+    "18+"
+  ],
+  "author": "Daniel Chahla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dchahla/easy-apn/issues"
+  },
+  "homepage": "https://github.com/dchahla/easy-apn#readme"
+}
