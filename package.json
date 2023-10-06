@@ -1,6 +1,6 @@
 {
   "name": "@swoopshops/easy-apn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Sends a push notification to an iOS device using a secure HTTP2 connetion with (APNS) Apple Push Notification Server.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "Notifications",
     "HTTP2",
     "Node",
-    "18+"
+    "18"
   ],
   "author": "Daniel Chahla",
   "license": "MIT",
