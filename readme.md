@@ -9,7 +9,7 @@ Easy APN is a lightweight Node.js module designed for any version of Node, inclu
 
 This module was born out of frustration after trying seemingly all existing APN npm libraries (apn-http2, apn2, node-apn, push-notification) in Node.js 18. When transitioning past Node.js 16 to Node.js 18, these modules returned error "unsupported" due to the introduction of native http2 in Node.js 18.
 
-Easy APN aims to provide a simple and reliable solution for sending p12 certs using system features, which Apple seems to prefer. Show me some love with a github star if this fixed your problem. Open to feature and pull requests.
+Easy APN aims to provide a simple and reliable solution for sending p12 (password protected) or pem (keys to the kingdom) certs using system features, which Apple seems to prefer. Show me some love with a github star if this fixed your problem. Open to feature and pull requests.
 
 
 ## Installation
@@ -29,8 +29,8 @@ const pushNotificationData = {
   message: 'Your Notification Message',
   sound: 'default', // optional
   badge: 1, // optional
-  certPath: '/path/to/your/cert.p12',
-  exportPassword: 'your-export-password',
+  certPath: '/full/path/to/your/cert.p12' || '/full/path/to/your/cert.pem',
+  exportPassword: 'your-export-password', // if p12, or if PEM begins with BEGIN ENCRYPTED PRIVATE KEY + an obnoxious amount of dashes
   appBundleId: 'com.your.app',
   pushToken: 'your-device-push-token', 
   additionalInfo: 'Test', // optional
