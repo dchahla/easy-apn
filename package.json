@@ -1,6 +1,6 @@
 {
   "name": "easy-apn",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "An easy, lightweight, adapter to send (APN) Apple Push Notifications.",
   "main": "index.js",
   "scripts": {
@@ -11,13 +11,8 @@
     "url": "git+https://github.com/dchahla/easy-apn.git"
   },
   "keywords": [
-    "APN",
-    "Apple",
-    "Push",
-    "Notifications",
-    "HTTP2",
-    "Node",
-    "18"
+    "native","zero-dependency","apple","ios","macos","tvos","watchos","apn","apns","apns2","push","notification","http2","apn-http2","apn2","node-apn","push-notification"
+
   ],
   "author": "Daniel Chahla",
   "license": "MIT",
