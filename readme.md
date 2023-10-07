@@ -14,7 +14,6 @@ Easy APN aims to provide a simple and reliable solution for sending (possibly pa
 
 ## Installation
 
-
 You can install the `easy-apn` module via npm:
 
 ```bash
