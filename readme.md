@@ -27,28 +27,44 @@ npm install easy-apn
 const sendPushNotification = require('easy-apn');
 
 const pushNotificationData = {
-  title: 'Your Notification Title',
-  message: 'Your Notification Message',
+  title: 'Your Notification Title', // optional
+  message: 'Your Notification Message',//*required
   sound: 'default', // optional
   badge: 1, // optional
-  certPath: '/full/path/to/your/cert.p12' || '/full/path/to/your/cert.pem',
-  exportPassword: 'your-export-password', // if p12, or if PEM begins with BEGIN ENCRYPTED PRIVATE KEY + an obnoxious amount of dashes
-  appBundleId: 'com.your.app',
-  pushToken: 'your-device-push-token', 
+  certPath: '/full/path/to/your/cert.p12' || '/full/path/to/your/cert.pem',//*required
+  exportPassword: 'your-export-password', //*required if p12, or if PEM begins with BEGIN ENCRYPTED PRIVATE KEY
+  appBundleId: 'com.your.app', //*required
+  pushToken: 'your-device-push-token', //*required
   additionalInfo: 'Test', // optional
-  production: true, // use false for sandbox.push.apple.com must be dev certs - optional
+  production: true, // optional, use false for sandbox.push.apple.com must be dev certs 
   debuggerEnabled: true // logs  
 };
 
-async function exampleSend() {
+
+
+
+
+
+async function simpleSend() {
+    const err = await sendPushNotification(pushNotificationData)
+    if(err){console.log(err)}
+
+}
+
+simpleSend()
+
+
+async function bulkSend() {
   for (let index = 0; index < 1000; index++) {
+    // keepalive supports bulk send
     pushNotificationData.badge = index
     const err = await sendPushNotification(pushNotificationData)
     if(err){console.log(err)}
   }
 }
 
-exampleSend()
+bulkSend()
+
 
 ```
 
