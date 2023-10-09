@@ -37,7 +37,7 @@ const pushNotificationData = {
   pushToken: 'your-device-push-token', //*required
   additionalInfo: 'Test', // optional
   production: true, // optional, use false for sandbox.push.apple.com must be dev certs 
-  debuggerEnabled: true // logs  
+  debuggerEnabled: true // optional, verbose logs  
 };
 
 

@@ -1,6 +1,6 @@
 {
   "name": "easy-apn",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "An easy, lightweight, adapter to send (APN) Apple Push Notifications.",
   "main": "index.js",
   "scripts": {
