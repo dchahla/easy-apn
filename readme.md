@@ -48,10 +48,6 @@ async function simpleSend() {
 }
 simpleSend()
 
-// // keepalive supports bulk send.
-// // uncomment to send 1000 notifications.
-// bulkSend()
-
 async function bulkSend() {
   for (let index = 0; index < 1000; index++) {
     pushNotificationData.badge = index
@@ -59,6 +55,7 @@ async function bulkSend() {
     if(err){console.log(err)}
   }
 }
+// bulkSend()
 ```
 
 ## API
