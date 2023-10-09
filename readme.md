@@ -57,9 +57,6 @@ async function bulkSend() {
     if(err){console.log(err)}
   }
 }
-
-
-
 ```
 
 ## API
