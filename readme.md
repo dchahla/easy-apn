@@ -46,8 +46,8 @@ async function simpleSend() {
 }
 simpleSend()
 
-// keepalive supports bulk send.
-// uncomment to send 1000 notifications
+// // keepalive supports bulk send.
+// // uncomment to send 1000 notifications.
 // bulkSend()
 
 async function bulkSend() {
