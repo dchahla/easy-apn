@@ -1,7 +1,6 @@
 # easy-apn
 [![npm version](https://img.shields.io/npm/v/easy-apn)](https://www.npmjs.com/package/easy-apn)
 <!-- [![License](https://img.shields.io/github/license/@swoopshops/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE)  -->
-[![NPM Install Size][npm-install-size-image]][npm-install-size-url]
 
 [![Known Vulnerabilities](https://snyk.io/test/github/dchahla/easy-apn/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dchahla/easy-apn?targetFile=package.json)
 
