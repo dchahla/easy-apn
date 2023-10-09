@@ -57,7 +57,6 @@ async function bulkSend() {
 }
 // bulkSend()
 ```
-
 ## API
 
 - **sendPushNotification(options, callback)**
