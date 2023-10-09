@@ -1,20 +1,13 @@
 # easy-apn
 [![npm version](https://img.shields.io/npm/v/easy-apn)](https://www.npmjs.com/package/easy-apn)
-<!-- [![License](https://img.shields.io/github/license/@swoopshops/easy-apn.svg)](https://github.com/dchahla/easy-apn/blob/master/LICENSE)  -->
-
 [![Known Vulnerabilities](https://snyk.io/test/github/dchahla/easy-apn/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dchahla/easy-apn?targetFile=package.json)
 
-
-
-
 ## Why
-
 Easy APN is a lightweight Node.js module designed for any version of Node, including Node.js 18 and later, allowing you to send push notifications to iOS devices using the Apple Push Notification Service (APNs) seamlessly. No dependencies are required as it leverages the simplicity and consistency of the `curl` (ships with Windows 10+) command for reliable error handling.
 
 This module was born out of frustration after trying seemingly all existing APN npm libraries (apn-http2, apn2, node-apn, push-notification) in Node.js 18. When transitioning past Node.js 16 to Node.js 18, these modules returned error "unsupported" due to the introduction of native http2 in Node.js 18.
 
-Easy APN aims to provide a simple and reliable solution for sending (possibly password protected) .p12 or .pem files using system features, which Apple seems to prefer. Show me some love with a github star if this fixed your problem. Open to feature and pull requests.
-
+Easy APN aims to provide a simple and reliable solution for sending (possibly password protected) .p12 or .pem files using system features, which Apple seems to prefer. Let me know if this fixed your problem, too. Open to feature and pull requests.
 
 ## Installation
 
