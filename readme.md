@@ -25,7 +25,7 @@ const pushNotificationData = {
   message: 'Your Notification Message',//*required
   sound: 'default',            // optional
   badge: 1,                    // optional
-  certPath: '/full/path/to/your/cert.p12' || '/full/path/to/your/cert.pem',//*required
+  certPath: '/full/path/to/your/cert.p12' || '/full/path/to/your/cert.pem', //*required
   exportPassword: 'your-export-password', //*required if p12, or if PEM begins with BEGIN ENCRYPTED PRIVATE KEY
   appBundleId: 'com.your.app', //*required
   pushToken: 'your-device-push-token', //*required
